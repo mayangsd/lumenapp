@@ -13,9 +13,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return ["Hello Hai..!!!"];
-});
+// $router->get('/', function () use ($router) {
+//     return ["Hello Hai..!!!"];
+// });
 
 $router->get('/data', function () use ($router) {
     $results = app('db')->select("SELECT * FROM user");
